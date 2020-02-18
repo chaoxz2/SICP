@@ -1,0 +1,10 @@
+(define (sum-of-bigger-two a b c)
+    (cond ((and (< a c) (< a b)) (+ b c))
+          ((and (< b c) ( < b a)) (+ a c))
+          (else (+ a b))
+    )
+)
+
+; (display (sum-of-bigger-two 7 2 3))
+; (display (sum-of-bigger-two 7 8 3))
+; (display (sum-of-bigger-two 7 8 9))
